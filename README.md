@@ -1,4 +1,4 @@
-# DeteccaoPhishing
+# Detecção de Phishing
 
 Phishing é uma técnica de fraude online em que um atacante tenta enganar a vítima para que ela forneça informações confidenciais, como senhas, números de cartão de crédito ou dados bancários, normalmente por emailsa. Nesse viés, o objetivo do programa é criar um sistema automatizado para detectar emails de phishing e classificá-los como "phishing" (1) ou "seguros" (0), contribuindo para a segurança cibernética. O programa utiliza a Rede Neural Perceptron Multicamadas (MLP), que funciona como um cérebro artificial. Ela aprende a tomar decisões analisando dados por meio de várias etapas (ou camadas). Cada camada da rede ajusta números internamente permitindo identificar padrões para classificar os emails como "phishing" ou "seguros".
 O processo inclui as seguintes etapas:
