@@ -7,15 +7,17 @@
 2. Por que criei este projeto?
 
    Este projeto foi desenvolvido para ajudar empresas e usuários a identificar e evitar links e sites fraudulentos, oferecendo uma ferramenta confiável e acessível. Ele é direcionado a:
+   
       Empresas: Para proteger funcionários e sistemas contra ameaças cibernéticas.
-      Usuários individuais: Que necessitam de uma solução prática para analisar URLs suspeitas.
+   
+      Usuários individuais: Que necessitam de uma solução prática para analisar emails suspeitos.
 
-3. Principais Problemas Identificados
+4. Principais Problemas Identificados
 
       Crescimento de ataques sofisticados: Os ataques de phishing estão cada vez mais complexos, dificultando sua detecção por métodos tradicionais.
       Falta de ferramentas acessíveis: Há uma carência de soluções simples e eficazes para análise em tempo real de links suspeitos.
 
-4. Como o Sistema Foi Desenvolvido
+5. Como o Sistema Foi Desenvolvido
 
       4.1.Treinamento do Modelo:
 
@@ -27,7 +29,7 @@
 
    O sistema foi avaliado com um conjunto de e-mails inéditos, alcançando uma precisão de 99%.
 
-5. Impacto do Projeto
+6. Impacto do Projeto
    
    Redução de incidentes de phishing;
    Aumento da segurança organizacional;
