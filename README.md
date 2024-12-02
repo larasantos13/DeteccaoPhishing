@@ -1,12 +1,37 @@
 # Detecção de Phishing
 
-Phishing é uma técnica de fraude online em que um atacante tenta enganar a vítima para que ela forneça informações confidenciais, como senhas, números de cartão de crédito ou dados bancários, normalmente por emailsa. Nesse viés, o objetivo do programa é criar um sistema automatizado para detectar emails de phishing e classificá-los como "phishing" (1) ou "seguros" (0), contribuindo para a segurança cibernética. O programa utiliza a Rede Neural Perceptron Multicamadas (MLP), que funciona como um cérebro artificial. Ela aprende a tomar decisões analisando dados por meio de várias etapas (ou camadas). Cada camada da rede ajusta números internamente permitindo identificar padrões para classificar os emails como "phishing" ou "seguros".
-O processo inclui as seguintes etapas:
-   1. Pré-processamento dos dados:  O programa começa lendo os dados do arquivo phishing_email.csv, onde as colunas são renomeadas para facilitar a detecção.Em seguida, remove-se qualquer linha com valores nulos nas colunas para garantir que o modelo receba dados completos. A coluna email_type é mapeada para valores binários, onde "Safe Email" se torna 0 e "Phishing Email" se torna 1.
-   
-   2. Divisão dos conjuntos de dados: Em seguida, a base de dados é dividida em diferentes subconjuntos para treinamento, teste e validação do modelo. Primeiramente, separa-se 80% dos dados para treinar o modelo de rede neural, enquanto os outros 20% são usados para testar o modelo, avaliando sua performance em dados que a rede neural não utilizou durante o treinamento. Além disso, um conjunto adicional é criado especificamente para simular testes em uma API, onde 500 amostras são retiradas aleatoriamente do conjunto de dados e salvas em um arquivo separado, o que permite realizar previsões em um ambiente de produção, sem interferir no treinamento ou na validação do modelo. Esses subconjuntos garantem que o modelo seja treinado, testado e validado de maneira eficiente e robusta.
-   4. Treinamento do modelo: A rede realiza diversos cálculos para tentar entender os padrões. Quando a rede erra, ajusta-se seus parâmetros internos para melhorar suas previsões. Esse processo de tentativa e erro é repetido muitas vezes até que a rede aprenda a classificar corretamente os emails, tornando-se capaz de identificar se um email é seguro ou phishing com base nos padrões que aprendeu.
-   5. Salvar o modelo: Após o treinamento, o modelo é salvo em um arquivo, permitindo que ele seja reutilizado para classificar novos emails sem a necessidade de ser treinado novamente. 
+1. O que é Phishing?
+   Phishing é uma forma de fraude online em que criminosos tentam enganar vítimas para obter informações confidenciais, como senhas, números de cartões de crédito ou dados bancários. Esses ataques são geralmente realizados por meio de e-mails falsos, mensagens ou sites que se passam por fontes confiáveis.
 
+2. Por que criei este projeto?
+   Este projeto foi desenvolvido para ajudar empresas e usuários a identificar e evitar links e sites fraudulentos, oferecendo uma ferramenta confiável e acessível. Ele é direcionado a:
+      Empresas: Para proteger funcionários e sistemas contra ameaças cibernéticas.
+      Usuários individuais: Que necessitam de uma solução prática para analisar URLs suspeitas.
+
+3. Principais Problemas Identificados
+      Crescimento de ataques sofisticados: Os ataques de phishing estão cada vez mais complexos, dificultando sua detecção por métodos tradicionais.
+      Falta de ferramentas acessíveis: Há uma carência de soluções simples e eficazes para análise em tempo real de links suspeitos.
+
+4. Como o Sistema Foi Desenvolvido
+
+4.1.Treinamento do Modelo:
+   Utilizamos redes neurais densas (Dense Neural Networks) para classificar textos de e-mails como "phishing" ou "seguro".
+   Transformamos o texto dos e-mails em vetores usando TF-IDF, extraindo padrões relevantes para o treinamento.
+   O modelo foi ajustado com técnicas como inicialização He e uma taxa de aprendizado otimizada, alcançando alta precisão nos resultados.
+
+4.2. Teste: 
+   O sistema foi avaliado com um conjunto de e-mails inéditos, alcançando uma precisão de 99%.
+
+5. Impacto do Projeto
+   Redução de incidentes de phishing;
+   Aumento da segurança organizacional;
+
+6. Aprendizados e Habilidades Adquiridas
+   Segurança cibernética: Aplicação de machine learning em problemas reais de segurança digital.
+   Desenvolvimento de APIs: Criação de serviços robustos e eficientes usando Flask.
+   Design de interfaces: Desenvolvimento de soluções acessíveis e intuitivas para usuários não técnicos.
+   Aplicação prática de IA: Resolução de desafios reais por meio de inteligência artificial e aprendizado de máquina.
+
+7. Melhoria contínua: Aperfeiçoamos a interface para facilitar a interpretação dos resultados, garantindo acessibilidade para usuários não técnicos.
 
 Base de Dados utilizada para treinamento: https://www.kaggle.com/datasets/subhajournal/phishingemails
