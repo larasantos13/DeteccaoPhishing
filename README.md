@@ -17,12 +17,14 @@
 
 4. Como o Sistema Foi Desenvolvido
 
-4.1.Treinamento do Modelo:
-   Utilizamos redes neurais densas (Dense Neural Networks) para classificar textos de e-mails como "phishing" ou "seguro".
+      4.1.Treinamento do Modelo:
+
+   Utiliza-se redes neurais densas (Dense Neural Networks) para classificar textos de e-mails como "phishing" ou "seguro".
    Transformamos o texto dos e-mails em vetores usando TF-IDF, extraindo padrões relevantes para o treinamento.
    O modelo foi ajustado com técnicas como inicialização He e uma taxa de aprendizado otimizada, alcançando alta precisão nos resultados.
 
-4.2. Teste: 
+      4.2. Teste: 
+
    O sistema foi avaliado com um conjunto de e-mails inéditos, alcançando uma precisão de 99%.
 
 5. Impacto do Projeto
@@ -39,6 +41,6 @@
 
 9. Melhoria contínua:
 
-   Aperfeiçoamos a interface para facilitar a interpretação dos resultados, garantindo acessibilidade para usuários não técnicos.
+   Aperfeiçoamento da interface para facilitar a interpretação dos resultados, garantindo acessibilidade para usuários não técnicos.
 
 Base de Dados utilizada para treinamento: https://www.kaggle.com/datasets/subhajournal/phishingemails
