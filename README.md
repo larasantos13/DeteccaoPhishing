@@ -1,18 +1,19 @@
 # Detecção de Phishing
 
 1. O que é Phishing?
+
    Phishing é uma forma de fraude online em que criminosos tentam enganar vítimas para obter informações confidenciais, como senhas, números de cartões de crédito ou dados bancários. Esses ataques são geralmente realizados por meio de e-mails falsos, mensagens ou sites que se passam por fontes confiáveis.
 
-2. Por que criei este projeto?
+3. Por que criei este projeto?
    Este projeto foi desenvolvido para ajudar empresas e usuários a identificar e evitar links e sites fraudulentos, oferecendo uma ferramenta confiável e acessível. Ele é direcionado a:
       Empresas: Para proteger funcionários e sistemas contra ameaças cibernéticas.
       Usuários individuais: Que necessitam de uma solução prática para analisar URLs suspeitas.
 
-3. Principais Problemas Identificados
+4. Principais Problemas Identificados
       Crescimento de ataques sofisticados: Os ataques de phishing estão cada vez mais complexos, dificultando sua detecção por métodos tradicionais.
       Falta de ferramentas acessíveis: Há uma carência de soluções simples e eficazes para análise em tempo real de links suspeitos.
 
-4. Como o Sistema Foi Desenvolvido
+5. Como o Sistema Foi Desenvolvido
 
 4.1.Treinamento do Modelo:
    Utilizamos redes neurais densas (Dense Neural Networks) para classificar textos de e-mails como "phishing" ou "seguro".
